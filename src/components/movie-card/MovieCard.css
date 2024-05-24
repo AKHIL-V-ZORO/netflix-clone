@@ -1,0 +1,51 @@
+.movie--card {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem;
+    transition: all 360ms;
+}
+
+.movie--card:hover {
+    transform: scale(1.033);
+}
+.movie--card--img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit:cover;
+    border-radius: 3px;
+}
+.movie--card--poster {
+    border-radius: 5px;
+    max-height: 300px;
+    padding: 1px;
+    border: solid 1px rgba(199, 3, 3, 0.863);
+    opacity: 1;
+}
+
+.movie--card--fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    opacity: 0;
+    transition: all 350ms;
+}
+.movie--card--fade:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.movie--card--name {
+    white-space:normal;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+
+}
+
